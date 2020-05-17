@@ -28,13 +28,13 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
+```ruby
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+```
 
 Check out the [Jekyll docs][jekyll-docs]{:target="_blank"} for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]{:target="_blank"}. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk]{:target="_blank"}.
 
@@ -73,19 +73,19 @@ Content in the first column | Content in the second column
 
 ## Image responsive (plugin Imager)
 
-{% imager typing_logotype.png|center %}
+<!-- {% imager typing_logotype.png|center %} -->
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
 
-{% imager typing_logotype.png|left %}
+<!-- {% imager typing_logotype.png|left %} -->
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
 
-{% imager typing_logotype.png|right %}
+<!-- {% imager typing_logotype.png|right %} -->
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo sequi ab numquam laborum blanditiis eveniet. Unde libero ex qui quas temporibus.
