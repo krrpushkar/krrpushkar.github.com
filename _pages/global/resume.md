@@ -68,29 +68,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quod voluptatum 
 
 #### **Frontend**
 
-{% badge HTML5|16px %}
-{% badge CSS3|16px %}
-{% badge SASS|16px %}
 
 #### **Frameworks**
 
-{% badge Bootstrap|16px %}
-{% badge AngularJS|16px %}
-{% badge ReactJS|16px %}
-
 #### **Backend**
 
-{% badge Python|16px %}
-{% badge Javascript|16px %}
-
 #### **Tools/Methodology**
-
-{% badge NodeJS|16px %}
-{% badge Webpack|16px %}
-{% badge Gulp|16px %}
-{% badge NPM|16px %}
-{% badge BEM|16px %}
-{% badge Responsive Web Design|16px %}
 
 ## Projects
 ---
