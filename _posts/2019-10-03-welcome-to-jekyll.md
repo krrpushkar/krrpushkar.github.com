@@ -95,11 +95,6 @@ Commodi eaque, temporibus quia praesentium dolores repellat minus corporis illo 
 <br>
 <br>
 
-{% badge Ruby|10px %}
-{% badge HTML5|20px %}
-{% badge CSS3|30px %}
-{% badge JQuery|40px %}
-
 <br>
 <br>
 
@@ -119,19 +114,12 @@ function fancyAlert(arg) {
 
 ## Gist code
 
-{% gist 7ab295790e841929cf83c0b1676269af %}
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
 
 <br>
 
 
 To use, see:[Jektify - Doc](https://jektify.github.io){:target="_blank"}
 
-{% jektify spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark %}
-
 Goodbye! :wink:
 
-{% endpost #9D9D9D %}
+
