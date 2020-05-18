@@ -1,12 +1,14 @@
 # Site settings
-title: *folio
-email: you@example.com
+title: Pushkar's Blog
+
+header: Pushkar's Blog
+email: pushkar.ranchi@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A simple, whitespace, helvetica based portfolio theme.
+   A simple, SAP Blog for me.
 baseurl:  # the subpath of your site, e.g. /blog/
 url:  # the base hostname & protocol for your site
-twitter_username: twitter_username
-github_username:  github_username
+twitter_username: krrpushkar
+github_username:  krrpushkar
 
 # Build settings
 markdown: kramdown

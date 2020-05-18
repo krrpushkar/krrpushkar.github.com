@@ -1,10 +1,15 @@
 ---
 layout: post
-title:  a post with images
+title: Eclipse ADT 2
 date: 2015-05-15 21:01:00
-description: this is what included images could look like
+description: How to use ADT ( ABAP Development Tools ) in Eclipse
 ---
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Fingerstache four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. 
+We can use ABAP in Eclipse using ABAP Development Tools ( ADT ).
+<br>
+Prerequisite : 
+	1. You are in ABAP perspective.
+	2. ADT is configured in your Eclipse.
+<br>
 
 <div class="img_row">
 	<img class="col three" src="/img/9.jpg">
