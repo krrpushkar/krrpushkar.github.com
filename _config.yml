@@ -22,7 +22,7 @@ authors:
     sal:
       name:           Pushkar
       site:           https://krrpushkar.github.io/
-      avatar:         /assets/images/prof_pic.jpg
+      avatar:         assets/images/prof_pic.jpg
       bio:            "Kumar Pushkar is an ABAP Developer with a lot of experience working with various clients. 
                        Pushkar enjoys a good Netflix binge but can also be found in the gym lifting weights. 
                        Pushkar loves to play chess and sometimes likes to cook."
@@ -32,7 +32,7 @@ authors:
     jane:
       name:           Jane
       site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
+      avatar:         assets/images/avatar2.jpg
       bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
       email:          fakemail@gmail.com
       twitter:        https://twitter.com/wowthemesnet
