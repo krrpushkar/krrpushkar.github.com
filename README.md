@@ -1,51 +1,51 @@
-# *folio
-A simple theme for showcasing your work, emphasis on whitespace, transparency, and helvetica. 
+# Jekyll Theme - Mundana by WowThemes.net
+
+[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/) &nbsp; | &nbsp; 
+[Download](https://github.com/wowthemesnet/mundana-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; 
+[Buy me a coffe](https://www.wowthemes.net/donate/) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/) &nbsp; | &nbsp; 
+[WordPress version](https://www.wowthemes.net/themes/mundana-wordpress/) 
+
+![mundana jekyll theme screenshot](assets/images/screenshot.jpg)
+
+### Documentation
+
+[How to install & use](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/)
+
+### Contribute to Mundana repository
+
+1. In the top-right corner of this page, click **Fork**.
+
+2. Clone a copy of your fork on your local, replacing *YOUR-USERNAME* with your Github username.
+
+   `git clone https://github.com/YOUR-USERNAME/mundana-theme-jekyll.git`
+
+3. **Create a branch**: 
+
+   `git checkout -b <my-new-feature-or-fix>`
+
+4. **Make necessary changes and commit those changes**:
+
+   `git add .`
+
+   `git commit -m "new feature or fix"`
+
+5. **Push changes**, replacing `<add-your-branch-name>` with the name of the branch you created earlier at step #3. :
+
+   `git push origin <add-your-branch-name>`
+
+6. Submit your changes for review. Go to your repository on GitHub, you'll see a **Compare & pull request** button. Click on that button. Now submit the pull request.
+
+That's it! Soon I'll be merging your changes into the master branch of this project. You will get a notification email once the changes have been merged. Thank you for your contribution.
 
 
-<a href="http://liabogoev.com/-folio">Live Demo</a>
+### Copyright
 
-<hr/>
+Copyright (C) 2019 WowThemes.net.
 
+Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under MIT license. 
 
-## Features
+<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-### Collections
-This Jekyll theme implements collections to let you break up your work into categories. The example is divided into poetry and portfolio, but easily revamp this into recipes, apps, short stories, limmericks, whatever your creative work is. 
-> To do this, edit the collections in the config file, create a corresponding folder, and update the portfolio and poetry source files. 
+### Live Demo
 
-Three different layouts are included—the poetry layout, for a simple list of entries, the blog layout (index.html), for more detailed descriptive list of entries, and the portfolio layout. The portfolio layout overlays a descriptive hoverover on a background image. If no image is provided, the square is auto-filled with the chosen theme color. Thumbnail sizing is not necessary, as the grid crops images perfectly. 
-
-### Portfolio Specifics
-You can easily add full pages for each of the projects in your portfolio. If you want one to link to an external website, create a file for it in _portfolio, and  fil in the YAML front matter as you would for another, but with a redirect, like so: 
-
-	---
-	layout: post
-	title: Project
-	description: a project that redirects to another website
-	img:
-	redirect: https://otherpage.com
-	--- 
-
-### Theming
-Six beautiful theme colors have been selected to choose from. The default is red, but quickly change it by editing the _base.scss file in line 40. The color variable are listed there, as well. 
-
-### Photos
-Photo formatting is made simple using rows of a 3-column system. Make photos 1/3, 2/3, or full width. Easily create beautiful grids within your blog posts and projects pages. 
-
-### Code Highlighting
-This theme implements Jekyll's built in code syntax highlighting with Pygments. Just use a liquid tag to delineate your code: 
-{% highlight python %}
-	code code code
-{% endhighlight %}
-
-
-<hr/>
-The MIT License (MIT)
-Copyright (c) 2015 Lia Bogoev
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/)
