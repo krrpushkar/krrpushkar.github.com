@@ -3,7 +3,7 @@ layout: post
 title:  "Enhancements in ABAP"
 author: sal
 categories: [ Jekyll, tutorial ]
-image: assets/images/enhancement.jpg
+image: assets/images/enhancement.jpeg
 tags: [sticky]
 ---
 
@@ -58,22 +58,10 @@ Now lets see what are the different ways to enhance SAP objects.
 <!-- Customer exit -->
   <li><span class="caret" style="color:blue">Customer Exit</span>
     <ul class="nested">
-      <li><span class="caret" style="color:teal">What it is?</span>
-        <ul class="nested">
-          <li>Black Tea</li>
-        </ul>
-      </li>
-     <li><span class="caret" style="color:teal">How to find it?</span>
-        <ul class="nested">
-          <li>White Tea</li>
-        </ul>
-     </li>
-     <li><span class="caret" style="color:teal">How to implement it?</span>
-        <ul class="nested">
-          <li>Black Tea</li>
-          <li>White Tea</li>
-        </ul>
-     </li>
+      <p>Customer exits are also same as user exit in terms of functionality. It acts as a hook to the standard program where you can hang your own add-on functionality. Customer Exits refers to all modules like SD, MM, FICO, PP etc. whereas User Exit is generally refers to the SD module. 
+There are three types of Customer Exit.</p><a href="/function-module-exit">1. Function Module Exit.</a>
+      <br><a href="/menu-exit">2. Menu Exit.</a>
+    <br><a href="/is-intelligence-enough">3. Screen Exit.</a>
     </ul> 
   </li>
 <!-- BADI -->
