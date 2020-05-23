@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Options for creating a new site with Jekyll"
+title:  "BADI Implementation"
 author: jane
 categories: [ Jekyll, tutorial ]
-image: assets/images/13.jpg
+image: https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80s
 ---
 
 `jekyll new <PATH>` installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called `myblog`. Here are some additional details:

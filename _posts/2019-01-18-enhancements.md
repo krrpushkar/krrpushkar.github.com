@@ -68,22 +68,8 @@ There are three types of Customer Exit.</p><a href="/function-module-exit">1. Fu
 <!-- BADI -->
   <li><span class="caret" style="color:blue">BADI</span>
     <ul class="nested">
-      <li><span class="caret" style="color:teal">What it is?</span>
-        <ul class="nested">
-          <li>Black Tea</li>
-        </ul>
-      </li>
-     <li><span class="caret" style="color:teal">How to find it?</span>
-        <ul class="nested">
-          <li>White Tea</li>
-        </ul>
-     </li>
-     <li><span class="caret" style="color:teal">How to implement it?</span>
-        <ul class="nested">
-          <li>Black Tea</li>
-          <li>White Tea</li>
-        </ul>
-     </li>
+      <p>Business Add Ins aka BADI is similar to the Customer Exit. Acts as a hook to the standard program but the approach here would be <b>Object Oriented</b>. Also BADI's can be implemented multiple times. Basically there are two things in BADI :</p><a href="/badi-definition">1. BADI Definition.</a>
+      <br><a href="/badi-implementation">2. BADI Implementation.</a>
     </ul> 
   </li>
 <!-- Enhancement framework -->

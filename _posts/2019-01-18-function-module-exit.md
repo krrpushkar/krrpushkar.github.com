@@ -21,13 +21,15 @@ Simplest way is to :
 2. Give your T-code (SU01).
 3. Click display and voila! you'll know the package.
 
-## How to identify the Customer Exit based on package?
+## <a id="exactline1">How to identify the Enhancements or Exit name based on package?</a>
 
 1. Execute SMOD T-code.
 2. Click on find button on Toolbar or go to Utilities->find in Menubar.
-3. Give the package name and execute. You'll see a list of Exit name so now after going through the description we can identify the correct Customer Exit. I know its a little bit boring to go through all the Exits as an ABAPer but I hope you know the next line &#128514;. But here for our case there will only one Exit <b>SUSR0001</b>, and from the description you can see that this Exit is called after user log into system. So now we just have to implement it.
+3. Give the package name and execute. You'll see a list of Enhancements or Exit name.
 
-## How to implement an Customer Exit?
+ So now after going through the description we can identify the correct Customer Exit. I know its a little bit boring to go through all the Exits as an ABAPer but I hope you know the next line &#128514;. But here for our case there will only one Exit <b>SUSR0001</b>, and from the description you can see that this Exit is called after user log into system. So now we just have to implement it.
+
+## How to implement an Function Exit?
 
 1. Go to CMOD T-code and create a new project starting with 'Z'.
 2. Click on Enhancement Assignment and provide our Exit name (SUSR0001) and press enter.

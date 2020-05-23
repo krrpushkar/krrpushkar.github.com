@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Never stopped worrying or loving the bomb"
+title:  "BADI Definition"
 author: sal
 categories: [ Jekyll ]
-image: assets/images/14.jpg
+image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1002&q=80
 tags: featured
 ---
 I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.
