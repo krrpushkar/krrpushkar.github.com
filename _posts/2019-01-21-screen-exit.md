@@ -11,7 +11,7 @@ Screen Exit allows you to add your own fields to specific screens in standard tr
 <br><a href="/function-module-exit">Function Module Exit</a>
 <br><a href="/menu-exit">Menu Exit</a>
 
-Okay as I have given an example in each previous Exits similarly we'll understand this one with one example. Lets assume you have to add some customer specific field on the header section of the screen in ME21N T-code( to create purchase order).<a href="#exactline">Find package name</a> i.e 'ME' and similarly <a href="exactline1">Find enhancement or Exit name</a>, for our case it is 'MM06E005'.
+Okay as I have given an example in each previous Exits similarly we'll understand this one with one example. Lets assume you have to add some customer specific field on the header section of the screen in ME21N T-code( to create purchase order).<a href="/function-module-exit#exactline">Find package name</a> i.e 'ME' and similarly <a href="/function-module-exit#exactline1">Find enhancement or Exit name</a>, for our case it is 'MM06E005'.
 
 ## How to implement an Screen Exit?
 1. Go to CMOD T-code and create a new project starting with 'Z'.
