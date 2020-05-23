@@ -4,6 +4,7 @@ title:  "Function Module Exit"
 author: sal
 categories: [ Jekyll, tutorial ]
 image: assets/images/function.jpeg
+date: 2020-05-21
 ---
 
 <b>Function Module Exit</b> is nothing but function module with 'Z' Include in it. And inside this 'Z' include you have to put your custom code.
@@ -13,7 +14,7 @@ image: assets/images/function.jpeg
 Okay, let's understand this with an example. Suppose there is a requirement to display custom welcome message when an user log into SAP system. By looking at the requirement we can say for sure that it is related to User maintenance i.e. SU01 T-code.
 Now what we have to do is, simply find the package for the T-code, after finding the package we can find the Customer Exits. And then choose the Customer Exit for our requirement and implement it. Again let me remind you in real time scenario Functional people will let you know the correct Customer Exit for the given customer requirement, so don't worry about this But as I said earlier there's no harm in knowing &#128512;.
 
-## How to find the Package of any T-code?
+## <a id="exactline">How to find the Package of any T-code?</a>
 
 Simplest way is to : 
 1. Go to SE93 T-code.
@@ -38,3 +39,5 @@ IF sy-uname = <userid>.
     MESSAGE 'Welcome to SAP' TYPE 'I'.
 ENDIF.
 {% endhighlight %}
+
+<br><a href="/menu-exit">Next Menu Exit</a>

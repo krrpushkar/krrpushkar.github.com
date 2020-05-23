@@ -5,6 +5,7 @@ author: sal
 categories: [ Jekyll, tutorial ]
 image: assets/images/enhancement.jpeg
 tags: [sticky]
+date: 2020-05-20
 ---
 
 Enhancement represent potential customer requirement that have not been implemented in the standard software. The standard software enables the further developement of such exits at the customer site, using logic specific to the customer.
@@ -61,7 +62,7 @@ Now lets see what are the different ways to enhance SAP objects.
       <p>Customer exits are also same as user exit in terms of functionality. It acts as a hook to the standard program where you can hang your own add-on functionality. Customer Exits refers to all modules like SD, MM, FICO, PP etc. whereas User Exit is generally refers to the SD module. 
 There are three types of Customer Exit.</p><a href="/function-module-exit">1. Function Module Exit.</a>
       <br><a href="/menu-exit">2. Menu Exit.</a>
-    <br><a href="/is-intelligence-enough">3. Screen Exit.</a>
+    <br><a href="/screen-exit">3. Screen Exit.</a>
     </ul> 
   </li>
 <!-- BADI -->

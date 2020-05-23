@@ -2,8 +2,9 @@
 layout: post
 title:  "Welcome to My Blog!"
 categories: [ Jekyll ]
-image: assets/images/demo1.jpg
+image: assets/images/myblog.jpeg
 author: sal
+date: 2020-05-20
 ---
 Here you'll find blogs on SAP ABAP topics. 
 
