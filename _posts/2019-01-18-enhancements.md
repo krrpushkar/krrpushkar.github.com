@@ -68,8 +68,13 @@ There are three types of Customer Exit.</p><a href="/function-module-exit">1. Fu
 <!-- BADI -->
   <li><span class="caret" style="color:blue">BADI</span>
     <ul class="nested">
-      <p>Business Add Ins aka BADI is similar to the Customer Exit. Acts as a hook to the standard program but the approach here would be <b>Object Oriented</b>. Also BADI's can be implemented multiple times. Basically there are two things in BADI :</p><a href="/badi-definition">1. BADI Definition.</a>
-      <br><a href="/badi-implementation">2. BADI Implementation.</a>
+      <p>Business Add Ins aka BADI is similar to the Customer Exit. Acts as a hook to the standard program but the approach here would be <b>Object Oriented</b>. Also BADI's can be implemented multiple times. BADI is an interface, each BADI consist of method without implementation called as BADI definition. You need to create ABAP class to implement the methods in BADI called as BADI implementation.
+      <span style="color:teal">Types of BADI :</span>
+      <br>1. Single implementation BADI : A BADI which has only one implementation (single class) is called single implementation BADI.
+      <br>2. Multiple implementation BADI : A BADI which has multiple implementations is called multiple implementation BADI. By default all the implementations will be executed.
+      <br>3. Filter BADI : It is type of BADI which has a filter value so that only those implementations which satisfy the filter value are executed. The remaining implementations are not executed this type of BADI is called a filter BADI.
+      For more detail on BADI definition and implementation check below links :</p><a href="/badi-definition">1. How to create BADI Definition?</a>
+      <br><a href="/badi-implementation">2. How ti Implement BADI?</a>
     </ul> 
   </li>
 <!-- Enhancement framework -->

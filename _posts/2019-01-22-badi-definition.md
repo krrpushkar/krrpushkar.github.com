@@ -5,33 +5,35 @@ author: sal
 categories: [ Jekyll ]
 image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1002&q=80
 tags: featured
+date: 2020-05-21
 ---
-I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.
+Before starting this let me tell you one thing you'll rarely create BADI Definition in real time scenario. Generally you'll use existing BADIs,<a href="#here">How to find it?</a> <br><b>SE18</b> is the T-code for BADI Definition. But before creating BADI you'll need a container for it i.e an Enhancement spot. This is the container in which you'll develope your BADI.
 
-So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences. 
+## How to create an Enhancement spot?
+1. Go to object navigator( SE80 ), navigate to the package in which you want to create the enhancement spot.
+<a href="/function-module-exit#exactline">How to find package name? click here.</a>
+2. In the context menu of the package choose <br>Create->Enhancement->Enhancement spot.
+3. Enter the name and description and save.
 
-In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:
+## How to create a BADI Definition?
+1. Within the same Enhancement spot, choose the create badi pushbutton on the left.
+2. Give name starting with 'Z' and short description of the BADI.
+3. Choose the type of the BADI.
 
-I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.
+<p>So the BADI creation is done? NO, you still need an interface where you'll define your method and while implementating the BADI actually you'll implement this method and write your logic.</p>
 
-> Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.
+4. Expand your BADI name and you will see the 'interface' icon.
+5. Double click on it and provide an interface name( either existing or a new one ).
+6. Click on change pushbutton this will take you to the class builder where you can create the method you need for your BADI. Simply now provide the method name and parameters for the method.
+7. Save and activate your BADI as well as Enhancement spot.
 
-I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.
+## <a id="here">How to find Existing BADI?</a>
+1. Execute SE24. Provide the object type as ‘CL_EXITHANDLER’. Click on display. 
+2. Double click on GET_INSTANCE method. 
+3. Place the break-point on first call method. 
+4. Now we execute our required transaction (which transaction BADIs we want) in a separate session.
+5. In the menubar click on debugger -> switch to classic debugger. Provide the field name as EXIT_NAME. Press Enter and Identify the BADI. Continuously click on F8 button. Identify the all the BADIs & maintain in Excel sheet. 
 
-So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences. 
+After that delete the break point. Now open the each & every BADI in ‘SE18’. Click on display. Click on interface tab. Double click on each & every method. Identify the input, output parameters. In the menu bar click on goto -> documentation -> to component. Read the documentation if it satisfies our requirement then we implement this method through SE19.
 
-In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:
-
-#### I don’t want you to think that I’m boasting
-
-Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.
-
-I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.
-
-> So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences. 
-
-In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:
-
-I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.
-
-Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.
+Confused? - Hence in the real time we always identify the BADIs with the help of functional people &#128512;.
