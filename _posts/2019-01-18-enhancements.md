@@ -9,14 +9,14 @@ date: 2020-05-20
 ---
 
 Enhancement represent potential customer requirement that have not been implemented in the standard software. The standard software enables the further developement of such exits at the customer site, using logic specific to the customer.
-Before going into the Enhancement lets understand the difference between the <b>Enhancement and Modifications.</b>
+Before going into the Enhancement lets understand the difference between the <b><code class="highlighter-rouge">Enhancement and Modifications.</code></b>
 
 #### Difference Between Enhancement and Modification
 
-1. <b>Modifications</b> are changes made directly into the SAP delivered objects( also called core modifications) Whereas <b>Enhancements</b> are additions or insertion at predefined points in SAP Objects. 
-2. Apart from the definition the main difference is <b>Modifications</b> are overwritten during SAP Upgrade or application of support packs and have to be reapplied/adjusted after the upgrade but that is not the case with <b>Enhancements. </b>
-3. <b>Modifications</b> are not provided by SAP whereas <b>Enhancements</b> are provided by SAP.
-4. In <b>Modification</b> you'll need object access key whereas in <b>Enhancement</b> you won't.
+1. <b><code class="highlighter-rouge">Modifications</code></b> are changes made directly into the SAP delivered objects( also called core modifications) Whereas <b><code class="highlighter-rouge">Enhancements</code></b> are additions or insertion at predefined points in SAP Objects. 
+2. Apart from the definition the main difference is <b><code class="highlighter-rouge">Modifications</code></b> are overwritten during SAP Upgrade or application of support packs and have to be reapplied/adjusted after the upgrade but that is not the case with <b><code class="highlighter-rouge">Enhancements.</code> </b>
+3. <b><code class="highlighter-rouge">Modifications</code></b> are not provided by SAP whereas <b><code class="highlighter-rouge">Enhancements</code></b> are provided by SAP.
+4. In <b><code class="highlighter-rouge">Modification</code></b> you'll need object access key whereas in <b><code class="highlighter-rouge">Enhancement</code></b> you won't.
 
 I hope now you have got the idea that the Enhancement concepts allows you to add your own functionality to SAP’s  standard business without having to modify the original applications.
 
@@ -81,13 +81,14 @@ There are three types of Customer Exit.</p><a href="/function-module-exit">1. Fu
 <!-- BADI -->
   <li><span class="caret" style="color:blue">BADI</span>
     <ul class="nested">
-      <p>Business Add Ins aka BADI is similar to the Customer Exit. Acts as a hook to the standard program but the approach here would be <b>Object Oriented</b>. Also BADI's can be implemented multiple times. BADI is an interface, each BADI consist of method without implementation called as BADI definition. You need to create ABAP class to implement the methods in BADI called as BADI implementation.
-      <span style="color:teal">Types of BADI :</span>
-      <br>1. Single implementation BADI : A BADI which has only one implementation (single class) is called single implementation BADI.
-      <br>2. Multiple implementation BADI : A BADI which has multiple implementations is called multiple implementation BADI. By default all the implementations will be executed.
-      <br>3. Filter BADI : It is type of BADI which has a filter value so that only those implementations which satisfy the filter value are executed. The remaining implementations are not executed this type of BADI is called a filter BADI.
-      For more detail on BADI definition and implementation check below links :</p><a href="/badi-definition">1. How to create BADI Definition?</a>
-      <br><a href="/badi-implementation">2. How ti Implement BADI?</a>
+      <p>Business Add Ins aka BADI is similar to the Customer Exit. Acts as a hook to the standard program but the approach here would be <code class="highlighter-rouge">Object Oriented</code>. Also BADI's can be implemented multiple times. 
+      <br> Each BADI contains <code class="highlighter-rouge">one Adapter class</code> and<code class="highlighter-rouge"> one Interface</code>, Adapter class will implement the interface and thus provides the interface for customer implementation. If the BADIs has to be executed under certain condition, then the Adapter class ensures that only certain implementation is executed. Basically to use BADI you'll have to create the instance of the adapter class in the application program and calls the corresponding method( defined in the interface) at the appropriate time(Explained in detail in BADI Implementation &#128512;).
+      <br><a id="types">Types of BADI</a> :
+      <br>1. <code class="highlighter-rouge">Single implementation BADI </code>: A BADI which has only one implementation (single class) is called single implementation BADI.
+      <br>2. <code class="highlighter-rouge">Multiple implementation BADI </code>: A BADI which has multiple implementations is called multiple implementation BADI. By default all the implementations will be executed.
+      <br>3. <code class="highlighter-rouge">Filter BADI </code>: It is type of BADI which has a filter value so that only those implementations which satisfy the filter value are executed. The remaining implementations are not executed this type of BADI is called a filter BADI.
+      For more detail on BADI definition and implementation check below links :</p><a href="/badi-definition">1. BADI Definition.</a>
+      <br><a href="/badi-implementation">2. BADI Implementation.</a>
     </ul> 
   </li>
 <!-- Enhancement framework -->

@@ -3,7 +3,8 @@ layout: post
 title:  "BADI Implementation"
 author: jane
 categories: [ Jekyll, tutorial ]
-image: https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80s
+image: assets/images/badi-implementation.jpeg
+date: 2020-05-22
 ---
 
 `jekyll new <PATH>` installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called `myblog`. Here are some additional details:
@@ -13,3 +14,4 @@ image: https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2
 - By default, the Jekyll site installed by `jekyll new` uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.
 - We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use `jekyll new myblog --blank`
 - To learn about other parameters you can include with `jekyll new`, type `jekyll new --help`.
+- 2afd69097998
