@@ -2,7 +2,7 @@
 layout: post
 title:  "BADI Implementation"
 author: jane
-categories: [ Jekyll, tutorial ]
+categories: [ Enhancement, BADI ]
 image: assets/images/badi-implementation.jpeg
 date: 2020-05-22
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "Enhancements in ABAP"
 author: sal
-categories: [ Jekyll, tutorial ]
+categories: [ Enhancements, Tutorial ]
 image: assets/images/enhancement.jpeg
 tags: [sticky]
 date: 2020-05-20
@@ -94,20 +94,33 @@ There are three types of Customer Exit.</p><a href="/function-module-exit">1. Fu
 <!-- Enhancement framework -->
   <li><span class="caret" style="color:blue">Enhancement Framework</span>
     <ul class="nested">
-      <li><span class="caret" style="color:teal">What it is?</span>
+      <p>Enhancement Framework in SAP ABAP is the new enhancement concept that helps in enhancing the standard code. They provide more flexibility compared all of its predecessors( User Exits, Customer Exits and BADIs). 
+      Few of its advantages are :
+      <br>1. Easy Maintainance.
+      <br>2. SAP can deliver more than one business processes in the same code.
+      <br>3. Customer can activate the business processes.
+      <br>Since SAP release 7.0 the BADI have been included in <code class="highlighter-rouge">SAP Enhancement Framework</code> but the concepts are same &#128512;.
+      <br>Types of Enhancement Framework:
+      </p>
+      <li><span class="caret" style="color:teal">Implicit Enhancements</span>
         <ul class="nested">
-          <li>Black Tea</li>
+          <p>An Implicit Enhancement is a source code plug-in point provided in SAP objects. Unlike Explicit Enhancement, these enhancements are almost present in each SAP objects and mostly at the begining and end of the source code of a program, Function Module, Method, Subroutines, even at the end of Structures, at end of Include Programs etc.
+          <br>How to find Implicit Enhancements and implement it is explained in next blog<a href="/implicit-enhancement"> Click here.</a></p>
         </ul>
       </li>
-     <li><span class="caret" style="color:teal">How to find it?</span>
+     <li><span class="caret" style="color:teal">Explicit Enhancements</span>
         <ul class="nested">
-          <li>White Tea</li>
-        </ul>
-     </li>
-     <li><span class="caret" style="color:teal">How to implement it?</span>
-        <ul class="nested">
-          <li>Black Tea</li>
-          <li>White Tea</li>
+          <li><span class="caret"><code class="highlighter-rouge">Enhancement Point</code></span>
+            <ul class="nested"></ul>
+          </li>
+          <li><span class="caret"><code class="highlighter-rouge">Enhancement Section</code></span>
+            <ul class="nested"></ul>
+          </li>
+          <li><span class="caret"><code class="highlighter-rouge">BADIs</code></span>
+            <ul class="nested">
+              <p> I have already explained the BADI concepts above in this blog.&#128514;</p>
+            </ul>
+          </li>          
         </ul>
      </li>
     </ul> 

@@ -2,7 +2,7 @@
 layout: post
 title:  "BADI Definition"
 author: sal
-categories: [ Jekyll ]
+categories: [ BADI, Enhancement ]
 image: assets/images/badi-definition.jpeg
 tags: featured
 date: 2020-05-21
