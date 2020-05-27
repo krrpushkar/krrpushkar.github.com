@@ -104,23 +104,74 @@ There are three types of Customer Exit.</p><a href="/function-module-exit">1. Fu
       </p>
       <li><span class="caret" style="color:teal">Implicit Enhancements</span>
         <ul class="nested">
-          <p>An Implicit Enhancement is a source code plug-in point provided in SAP objects. Unlike Explicit Enhancement, these enhancements are almost present in each SAP objects and mostly at the begining and end of the source code of a program, Function Module, Method, Subroutines, even at the end of Structures, at end of Include Programs etc.
+          <p>An Implicit Enhancement is a source code plug-in point provided in SAP objects. Unlike Explicit Enhancement, these enhancements are almost present in each SAP objects and mostly at the begining and end of the source code of a program, Function Module, Method, Subroutines, even at the end of Structures, at end of Include Programs etc. Since Implicit Enhancements are provided by SAP hence they do not have to belong to a container( <code class="highlighter-rouge">Enhancement Spot</code>).
           <br>How to find Implicit Enhancements and implement it is explained in next blog<a href="/implicit-enhancement"> Click here.</a></p>
         </ul>
       </li>
      <li><span class="caret" style="color:teal">Explicit Enhancements</span>
         <ul class="nested">
+          <p>
+            Using an Implicit Enhancement, only at certain fixed places you can enhance the code. But using Explicit Enhancement a user can enhance the code at any place he/she wants. Explicit Enhancements may not be available for all the SAP Objects. Since it is getting explicitly created in the objects hence it needs a container( <code class="highlighter-rouge">Enhancement Spot</code>) so that the developers or customers can find it. There are 3 options to enhance using Explicit enhancement.
+          </p>
           <li><span class="caret"><code class="highlighter-rouge">Enhancement Point</code></span>
-            <ul class="nested"></ul>
+            <ul class="nested">
+              <p>Enhancement points has to be created in the report where exactly customer want to enhance so that the desired results at that point can be changed by the enhancement implementation.</p>
+              <strong style="color:red">How to Create Enhancement Point?</strong>
+              <br>1. Go to SE38 and open the satandard report and go to Edit->Enhancement Operations->Create Options.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3e5GBgBBfe9PptOn6rrSAWLT77RNPz0FIg1nnzfWNdXXPC0GvgpZxBjupZahj_Q6vI9nHMtdZXldYB05E0loS-NG2gyzZzEv5Y3244j2vdRhk7l_shLG2GAhScj9724FgPmSnIJDOqer-RRo9beIkBz=w948-h568-no?authuser=0">
+              <br>2. Give the enhancemen point and Enhancement spot name.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3fr0x_z8uQL-sLLiwaqzSiKGBa877DsRLwtYNhVOhv4IOu1XwILNkbde33Gq2AZaf1wdWxgqKPoLl1dw8G0-1hXH5tcmvmVVjGLGbSDTiKpIk0gsUCTtoCeJ0Ubg6yarMOODDFQOUP5yONr3Pzqa3Zd=w1440-h604-no?authuser=0">
+              <br>3. Once you click on continue below code will be generated.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3d41uh3XoJtiLizUcgdeqL60LgDQnEmleXpot2thge4ZYhTrN_LO0e87kKcg0B7dOTD33-CmhToNMjPVsQmU12jN_3-62bCBGhUjsu0iNXYtq7aJBKGBfT7qul2R7Awam9PV2PeCWrPac_CZe14EJ53=w1028-h248-no?authuser=0">
+              <br><strong style="color:red">How to Implement Enhancement Point?</strong>
+              <br>1. Click enhance option. I hope till now you get the idea what's an enhance button is &#128521;.
+              <br>2. Right click on the Enhancement point that you just created and Enhancement Operations->Create Implementation.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3dsX8n5bRoTTnDagFtTN7VhLtlYO8bPHBcntjSrP7fNMV9xB1CzalmZuV7jqhEO2heWJlOFe3hnNL_Twt_LHAl3sehtizGYlPNWv6ltKfxGCGYe_XDqkBoToGGi9Wzx8T2HFh4yDEomx8cqEHhmO7-9=w1216-h782-no?authuser=0">
+              <br>3. Provide the Implemenattion name and description.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3epoKvcvh5NSfJyQyI14ZySeaYziJForiAkNRAE4w_B-6pJ0A1myfn0QHHdLyTaUl21mlicFZ5BTk81RmYjUKgvvYSsSqVOmEM8Bch0vBZEPRmtBr-y38EBBP90cZ5rNwSKalPhhLrxURzgRrl88zPV=w1440-h262-no?authuser=0">
+              <br>4. Click on continue and add the implementation code for the point. Activate it. 
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3fuspfBzAc0F-ZBn8oIAGEMFJ-bNksAt-ElZfkbyDAxG7XoizG39S5r3G6WwsnAdtZUsAtg5j2L6hqITAKZtoAThZXfUA22www3cieQMtihQHMX3Zmg2VNV7FGGx3-18vrlUK8Pw-07FHf_zli2OGLX=w1440-h409-no?authuser=0">
+            </ul>
           </li>
           <li><span class="caret"><code class="highlighter-rouge">Enhancement Section</code></span>
-            <ul class="nested"></ul>
+            <ul class="nested">
+              <p>Enhancement Section has to be created in the report by selecting the section of code lines which can be enhanced by the customer implementation.</p>
+              <strong style="color:red">How to Create Enhancement Section?</strong>
+              <br>1. Go to SE38 and open the satandard report, <code class="highlighter-rouge">select the section of code</code> and go to Edit->Enhancement Operations->Create Options.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3cMtwzthaN6mlV5BtCz-wWUijW-shzCmcu2EqwJ8n44N0r3VEtasJIslI9-eka5BymM9fZS_ZO6mTfswU-FfjndumNi1I51HPeZNB_V-rkqSs33g0RbbfH48hJ1CvXcxNuqKsg7tz2eQ0HQ7I4IEP2h=w936-h514-no?authuser=0">
+              <br>2. Give the enhancemen section and Enhancement spot name(Exixting spot name can be used).
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3ekvxXuLxFSAxtLB4cOGQujDVH7jfACFsSZXkFgQAN5vExWDKW_4gkE_GndGIKAA4Oye0QBvzkgg5GFz3Bs0dmMHdgSXmr-wqWUcBi3l9_81clTqgrd1Qoxwp_KMcXKo_4a8KUvnVOxMwBRPNOAkWPW=w1440-h555-no?authuser=0">
+              <br>3. Once you click on continue below code will be generated.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3dgvLD5xGji-oOAVf08hR-EsgWFwx4yvwxtUwOhTG_3z18d0fTO0UdxQG3P9ROFWuVhyvkotSfIoiCcRujiU062N-k44Plcrj9dcc6yGv8wltRssISeTPgRYPMtL9P-ox4tCGKwU_KOhS1iwZVv828O=w845-h198-no?authuser=0">
+              <br><strong style="color:red">How to Implement Enhancement Section?</strong>
+              <br>1. Click enhance option.
+              <br>2. Right click on the Enhancement section that you just created and Enhancement Operations->Create Implementation.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3dW1onr_yGt8ilM0UstoeBGJbgSS4OzgPDQrjzAolbWHdy4SV3nmUaCSqyNGgyEOkr0yvPCcJfdxZCir9TgYuGSFrRIeEhn9OYhbNIDl-KeOnNuqcaM6xI8pP-coHaRwrvxsALyPkMHWgTwHCfKArDK=w1440-h557-no?authuser=0">
+              <br>3. Provide the Implemenattion name and description.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3e4jnGhqjRWobbW_M7o01e3V1N6sE9vYYDK7L_PFmoWQSXd2dOYpiONwNMZvX_iD016cGGRetYuv9NqKA_pZuoTboci5h2PG5MuSoL0ZE2FsZ8d4FOk9LogC2ks3qz38zg68A3DJQhBywVJgD-MpNGV=w1440-h255-no?authuser=0">
+              <br>4. Click on continue below screen will be generated.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3dq-gOCVjqlsViitlHP_qzLh8y21u82DAgjcPWy1610jjMJW0n2LBss7PGixdIIBK2SKCMliN_HOGPijliHkLxymYNd5wIXB68Um0OZsmjqThvCKoxAYdWlc4YqknR3IWqI11EBm4LqVBm-IMRMueT5=w954-h422-no?authuser=0">
+              <br>5. Change the logic and activate it.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3fBjcz51vdltMc8Ws0h70DM6ZGHGBwzMOmk9nMThPbUVQiehvl2frbWP55nVrs_Z97b1lsAgRaEbD0-obagP8zPD7JCU729aMUmO3M37KhrwpuHmPkSc3qO9Z2642JHwGQB6qxNjpDgiRTxhPlm8WXZ=w960-h482-no?authuser=0">
+
+              <code class="hilighter-rouge">Let's see if our code works.</code>
+              <br>1. Put a breakpoint at the method.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3fpzVKpl2xxyDmxQVNplNX8hLL7of_H0qQRtfyTe8mzMEaQhqZBPH38nZNKR6l7gqid8JHBQBoaSrqCyhnxg51_6xiaUptSgxlzVoVvdUvaWhbLA_yxDvutW3GTbaSCVvhutsPOUfco2TFbrIGmzx7E=w658-h230-no?authuser=0">
+              <br>2. Execute the report. Debugger will start. Below code is the standard code.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3cTixbE8Ee3J3DRZxX_38MCpWf-6qo_malcbDu2ih7_W_d9_favA9zzrr-CewYoA7dgkCS6KcIuQcvAx5CwTsRvuyUGUrtW-hrlp5LZ_f4x1HLUDoP17hLX5FFcTE-kuKGjQ07i4ZGrQLUdSR1cnIm9=w1018-h388-no?authuser=0">
+              <br>3. Press F5 you'll see your custom enhanced code getting executed.
+              <img src="https://lh3.googleusercontent.com/pw/ACtC-3cm8xgED4M2Ode4niXF7Sycwx_dI3GdmSA0J9Nx6ZUqRPPrv-ozk405rX39mXbaOYJm5kqCFZ0iqo9-WvHJw7ohxt5BgkLiaqUimPB9gUU53Lmms3KmNArM2dDwP9gXTnavFjUscPu4SL_iSE7IovtA=w926-h334-no?authuser=0"> 
+
+              Hence when you implement Enhancement section your custom code gets executed instead of standard code.
+            </ul>
           </li>
           <li><span class="caret"><code class="highlighter-rouge">BADIs</code></span>
             <ul class="nested">
               <p> I have already explained the BADI concepts above in this blog.&#128514;</p>
             </ul>
-          </li>          
+          </li> 
+          <p><u>The main diffrence between Enhancement point and Enhancement Section</u> is that if you have written your code using Enhancement point, your custom code will get executed along with the standard code.
+          <br>But in case of ENhancement Section, your custom code will replace the standard code that means your custom code will get executed instead of standard code.</p>         
         </ul>
      </li>
     </ul> 

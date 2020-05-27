@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Welcome to My Blog!"
+categories: [ Jekyll ]
+image: assets/images/myblog.jpeg
+author: sal
+date: 2020-05-20
+tags: [ sticky ]
+---
+Hi there, `Welcome!` Want to maximize your SAP ABAP knowledge? You have come to right place. When I started my `ABAP` jouney in 2017 I wasn't as confident as I am today in certain advance topics, you must be thinking this is what experience does. Yes I agree with you but its not all about experience I did not had the proper guidance on how to start and proceed in Production world &#128521;.
+
+Through my Blogs I'll try to guide you in your SAP journey and you can feel the confidence in yourself. I have tried to keep my blogs short and to the point. Keeping the beginners in mind, the problems I faced when started my SAP ABAP journey, I have tried  to keep it simple and understandable.
+
+I have explored some latest topics in ABAP too hence do regularly check my posts &#128522;.
