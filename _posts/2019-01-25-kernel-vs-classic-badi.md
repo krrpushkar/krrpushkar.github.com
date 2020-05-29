@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Classic BADI vs Kernel BADI"
-author: jane
+author: sal
 categories: [ Jekyll, tutorial ]
 image: assets/images/kernelvsclassicbadi.jpeg
 date: 2020-05-26
