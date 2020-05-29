@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "BADI Definition"
+title:  "BADI Definition and Implementation"
 author: sal
 categories: [ BADI, Enhancement ]
 image: assets/images/badi-definition.jpeg
 tags: featured
 date: 2020-05-21
 ---
-Before starting this let me tell you one thing you'll rarely create BADI Definition in real time scenario. Generally you'll use existing BADIs or Standard BADIs,<a href="/badi-implementation#here">How to find it?</a> <br><b>SE18</b> is the T-code for BADI Definition. But before creating BADI you'll need a container for it i.e an Enhancement spot. This is the container in which you'll develope your BADI.
+Before starting this let me tell you one thing you'll rarely create BADI Definition in real time scenario. Generally you'll use existing BADIs or Standard BADIs,<a href="/badi-implementation#here"> How to find it?</a> <br><b>SE18</b> is the T-code for BADI Definition. But before creating BADI you'll need a container for it i.e an **Enhancement spot.** This is the container in which you'll develope your BADI. If you are thinking **WHY?** its because using **Enhancement spot** you can add your code in the standard code without needing the access key, which implies standard code won't be disturbed. 
 
 `Use case:` Let's create a BADI Definition to get tax value.
 
@@ -40,14 +40,14 @@ Before starting this let me tell you one thing you'll rarely create BADI Definit
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3cz6DIva2sYq7PdipzDg_TgGBNsAWFqr7CivazOjqEVObnQXhwejRg2QExGiVXdHgUh5uXwC6KtYVq1U9VFZfo6niZ9COwGna3Kn0IKYWxEMYbvwWCsCGKMvp0JII3hoBRKHx-SP43ROyITNyCsDAmJ=w1296-h404-no?authuser=0">
 7. Save and activate your BADI as well as Enhancement spot.
 
-This is a custom BADI you have created just now, and you have to implement it that I will show you here but in real time mostly you will implement Standard BAPI.To know about implementing standard BADI <a href="/badi-implementation">Click here.</a>
+This is a custom BADI you have created just now, and you have to implement it that I will show you here but in real time mostly you will implement Standard BAPI. To know about implementing standard BADI <a href="/badi-implementation">Click here.</a>
 If you will run your report program where you have used this BADI, it will go for dump hence you have to create an implementation for the BADI.<a href="#here" id="back">Try executing your report without implementing your BADI.</a>
 
 8. Go back to the main screen and right click on Implementation -> create BADI Implementation.
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3e-bHuAgv_acTJ3_lhM05LO3Tm14vQrbijm0Jzi_XiMLCgM4dEZUB-N0Vw03nZFwgC1XRl4DM0j3-MWES2ov88UGWWPJsh3XvfFJBYFqTt3jWfgezrW_l106Kwx7qyaSL5NBeEXkqyqjVXOFWaTnJZy=w1440-h447-no?authuser=0">
 9. Provide Implementation name and short text and click on continue.
 <img src="https://lh3.googleusercontent.com/lzwLHiLZoYq0f9OwzeQonyNrh0uVMvNnyIXJsxU1W7uHm6c4ADFpT1zcTS6drJwyYe-tt9KigPXeGTbmpB2ja-JMMwnOXD33PhqIKGPiqemnwK7kBxT405Lbye7HQ9NHThHSsYk00eRb3cYOFzP1W7E-Terlq04AW5oNlFE2Noy6F-Bo2teU83YrN-Yx-ilUljPjwXduo4vvkffhs6A5HnU_nrhpd-4hl3diA3BDcBTF83P2g8GoMMK8zz_nSscdJzoxTYJPbre1m2uOnqBQkxGn9KN1NLQmUJA-UqVMrfSJ9EVJQi48OxONptRs9JnIsps6c6v_PaDX7D4oFnRIWuYdGtufaK5h2MQgt-K9HpB3q6gTG8HZk5aTrc3C8TeHshkw9RtyZnIbON7158x_1ea3NRkqFSbfj3DiHkSV1vcpUUWDlCurwXL6Lp4C-P_hzJtL5cCrab68z6-GpyJh4xTU6IBJfNbiAfNj69530cSVlCqCKD7A0O4q9Ixlb_W6ZMQF62dR_AcCkVtKgqR4IanfgSVO6fPg4T37e-BeqZFJI1KsOcEnWrt2E9Bzr9bADQYCy2juS3uDIM_jbZ_rONgOWixo8kEdgVja69pDcbFL8ZjqKKZS5IEBh-_utpfh1KGXPE21ZC4ZprQGlNx0iCETKjdFGu18EcjeXDiWgSOkOJ_xcV9wEWflVcaq=w1440-h259-no?authuser=0">
-10. Click on continue and provide the implementation name that you just created, give escription and then give a class name which will implement the BADI.
+10. Click on continue and provide the implementation name that you just created, give description and then give a class name which will implement the BADI.
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3ep-u2AdVub_lrnUr7pcQLrRECpE11RMFV1P2A-gpExsawfTV33M14Vgcb_dug3pY16kHW_PikyB-jGZE-NHUSCY4rCyTwmW1Ol_xO8xys6e1doR17Jnx4auDiPGAryg2Spp8VnPCQHZ1d79BM6dgOr=w1440-h259-no?authuser=0">
 11. Now in implementation section you'll find your BADI Implementation, double click on it.
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3fYf8wgcWB5pZDIID1xrLeH2P_bTk6szAbnD3jLzVB3kmy3Cll3Hnqw2-ibx9Ap6E0j8INIV2OrnamPvSsjEFiqpqf_ccT9R9BCP8oOJjJSq5vRlkFUaOkw9psYxam1Rki_WEkxQCajPIeqE1R6YEir=w1440-h775-no?authuser=0">
@@ -61,8 +61,12 @@ If you will run your report program where you have used this BADI, it will go fo
 {% endhighlight %}
 
 ## <code class="highlighter-rouge"><a id ="here">What's Fallback Class?</a></code>
-- If you run the below ABAP Program without implementing the your BADI, you'll get dump. Why? because you have not imlemeted the BADI yet. You can handle this error by catching the exception `CX_BADI_NOT_IMPLEMENTED.`
+- If you run the below ABAP Program without implementing your BADI, you'll get dump. Why? because you have not implemeted the BADI yet. 
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3eZMVNwQKbu-HWMGjDT6NQaE6yyzrtpUXe1zpl666FcRcwmn4L26EKtjavQzCsXpY71UjTDgeJpkFBoAD9d_CLcOXJgW0v5vX0eoVrtm2hRRVH38c9S_4l-JrL4my9uy3gQb0xQ7gluIjPpbQOWjhvu=w1038-h754-no?authuser=0">
+
+You can handle this error by catching the exception `CX_BADI_NOT_IMPLEMENTED.`
+
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3cYdavhQuX3o7yXejAjrrPTADw65IEeVxIqtbQgg1U-N9XhPsXUg2lYR2XbL80r1nVV5v_NaIvSRn86ia8w-5U9t_bCdNEousLmZ4EgNWrN7pr7siAqMg8Wnc-OAyVGL_CQjwzUF67UNp7l8BkryluQ=w975-h788-no?authuser=0">
 - A better solution is to use Fallback class. A fallback class is used when there is no active BADI implementation. The `GET BADI ` command return a handle to an instance of the fallback class and the respective `CALL BADI` calls the methods of the fallback class instance. As soon as there is active BADI implementation, the fallback class is no longer used at runtime.
 
 1. Select checkbox `call fallback class if no implementation is executed` and enter a name for the class.

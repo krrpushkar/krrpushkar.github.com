@@ -22,7 +22,7 @@ I hope now you have got the idea that the Enhancement concepts allows you to add
 
 Now lets see what are the different ways to enhance SAP objects.
 <!-- Types of enhancement -->
-<ul id="enhancements">
+<ul id="enhancement">
 <!-- user exit -->
   <li><span class="caret" style="color:blue">User Exit</span>
     <ul class="nested">
@@ -81,14 +81,15 @@ There are three types of Customer Exit.</p><a href="/function-module-exit">1. Fu
 <!-- BADI -->
   <li><span class="caret" style="color:blue">BADI</span>
     <ul class="nested">
-      <p>Business Add Ins aka BADI is similar to the Customer Exit. Acts as a hook to the standard program but the approach here would be <code class="highlighter-rouge">Object Oriented</code>. Also BADI's can be implemented multiple times. 
+      <p id="badi">Business Add Ins aka BADI is similar to the Customer Exit. Acts as a hook to the standard program but the approach here would be <code class="highlighter-rouge">Object Oriented</code>. Also BADI's can be implemented multiple times. 
       <br> Each BADI contains <code class="highlighter-rouge">one Adapter class</code> and<code class="highlighter-rouge"> one Interface</code>, Adapter class will implement the interface and thus provides the interface for customer implementation. If the BADIs has to be executed under certain condition, then the Adapter class ensures that only certain implementation is executed. Basically to use BADI you'll have to create the instance of the adapter class in the application program and calls the corresponding method( defined in the interface) at the appropriate time(Explained in detail in BADI Implementation &#128512;).
       <br><a id="types">Types of BADI</a> :
       <br>1. <code class="highlighter-rouge">Single implementation BADI </code>: A BADI which has only one implementation (single class) is called single implementation BADI.
       <br>2. <code class="highlighter-rouge">Multiple implementation BADI </code>: A BADI which has multiple implementations is called multiple implementation BADI. By default all the implementations will be executed.
       <br>3. <code class="highlighter-rouge">Filter BADI </code>: It is type of BADI which has a filter value so that only those implementations which satisfy the filter value are executed. The remaining implementations are not executed this type of BADI is called a filter BADI.
-      For more detail on BADI definition and implementation check below links :</p><a href="/badi-definition">1. BADI Definition.</a>
-      <br><a href="/badi-implementation">2. BADI Implementation.</a>
+      For more detail on BADI definition and implementation check below links :</p><a href="/badi-definition">1. BADI Definition and Implementation.</a>
+      <br><a href="/badi-implementation">2. Standard BADI Implementation.</a>
+      <br>In this blog I have discussed about kernel BADI, how to create it and implement it using <strong>GET BADI & CALL BADI</strong> statements. Now if you are wondering what is the difference between Kernel BADI and Classic BADI? <a href="/kernel-vs-classic-badi">Check out my next blog on that.</a>
     </ul> 
   </li>
 <!-- Enhancement framework -->
@@ -99,7 +100,7 @@ There are three types of Customer Exit.</p><a href="/function-module-exit">1. Fu
       <br>1. Easy Maintainance.
       <br>2. SAP can deliver more than one business processes in the same code.
       <br>3. Customer can activate the business processes.
-      <br>Since SAP release 7.0 the BADI have been included in <code class="highlighter-rouge">SAP Enhancement Framework</code> but the concepts are same &#128512;.
+      <br>Since SAP release 7.0 the BADI have been included in <code class="highlighter-rouge">SAP Enhancement Framework</code> where they represent explicit enhancement options. BADI before Release 7.0 are known as Classic BADI and BADI from release 7.0 onwards are known as new or kernel BADI( its concepts I explained above ). To know more about the difference between them <a href="/kernel-vs-classic-badi">click here.</a> 
       <br>Types of Enhancement Framework:
       </p>
       <li><span class="caret" style="color:teal">Implicit Enhancements</span>
