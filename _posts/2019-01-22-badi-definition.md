@@ -40,7 +40,7 @@ Before starting this let me tell you one thing you'll rarely create BADI Definit
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3cz6DIva2sYq7PdipzDg_TgGBNsAWFqr7CivazOjqEVObnQXhwejRg2QExGiVXdHgUh5uXwC6KtYVq1U9VFZfo6niZ9COwGna3Kn0IKYWxEMYbvwWCsCGKMvp0JII3hoBRKHx-SP43ROyITNyCsDAmJ=w1296-h404-no?authuser=0">
 7. Save and activate your BADI as well as Enhancement spot.
 
-This is a custom BADI you have created just now, and you have to implement it that I will show you here but in real time mostly you will implement Standard BAPI. To know about implementing standard BADI <a href="/badi-implementation">Click here.</a>
+<p id="implementation">This is a custom BADI you have created just now, and you have to implement it that I will show you here but in real time mostly you will implement Standard BAPI. To know about implementing standard BADI <a href="/badi-implementation">Click here.</a></p>
 If you will run your report program where you have used this BADI, it will go for dump hence you have to create an implementation for the BADI.<a href="#here" id="back">Try executing your report without implementing your BADI.</a>
 
 8. Go back to the main screen and right click on Implementation -> create BADI Implementation.
