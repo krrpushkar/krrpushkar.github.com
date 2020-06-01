@@ -10,7 +10,7 @@ date: 2020-05-27
 
 In this blog I'll create filter option for both Classic and Kernel BADI, the process might be different but the concept is same.
 
-`Lets start with Kernel BADI first`, in previous blog I have created one Kernel BADI `ZKERNEL_TEST` under `ZKERNEL_SPOT` enhancement spot, to display simple message, but now in this blog I'll modify the existing Kernel BADI a little bit to display message based on country. 
+`Lets start with Kernel BADI first`, in previous blog I have created one Kernel BADI `ZKERNEL_TEST` under `ZKERNEL_SPOT` enhancement spot <a href="/badi-definition">check here</a>, to display simple message, but now in this blog I'll modify the existing Kernel BADI a little bit to display message based on country. 
 
 Open the BADI in SE18 and right click on BADI name in the left panel and Choose Create Filter.
 
