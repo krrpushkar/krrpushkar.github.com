@@ -69,7 +69,7 @@ Go to SE18 and while <a href="/kernel-vs-classic-badi#classic">creating classic 
 ![filtercheckbox](https://lh3.googleusercontent.com/pw/ACtC-3fEPBOAdINzGxjEAMM0d6aobVXwbahEQXJTbdp0bZPQAXIVJeFK4u6dZZTyGFpzFx4x0fyKy9K3w69kcfDpmwkygnFVmpICqDEZVe2XTMdYeT43Ay8z_-RfczpY6nvFNzB3ISxXp3_k-wQn2Xn3mPrY=w1328-h788-no?authuser=0)
 Provide the Filter Type. A Filter type can be a `Data element or a Structure.` A Data element must fullfill below criteria:
 <br>1. The Data element's domain must be of type <i style="color:blue">character</i> and the length must be less than equal to 30.
-<br>2. Either the data element has a search help with a search help parameter of the same data type as the data element, and this parameter msut serve as both the import and export parameter, or the domain has fixed domain values or a value table containing a column with same data type as the data element.
+<br>2. Either the data element has a search help with a search help parameter of the same data type as the data element, and this parameter must serve as both the import and export parameter, or the domain has fixed domain values or a value table containing a column with same data type as the data element.
 
 `Note: `If you want to call the implementation of a BADI to depend not only on a filter value but on various values, you can enter the name of a Structure in the Filter Type field. The Structure can consist of several data elements that fullfills the above criteria for data element. The structure must not be longer than 80 charaters.
 
