@@ -182,5 +182,4 @@ You'll get below message.
 ![message](https://lh3.googleusercontent.com/pw/ACtC-3dnF-7mKdem6J7Iwo3lynb9bZKzuWDY-tIrV68D1GAiwBsO4VQzIBeTZmiD6SsOFbzjF_-yU0zfXAZxwqYFsGg7JTve91XRt_Ekwe9cwfevk-yKOUj7jqqgxyych3pyEaXjHdMcyZa9KfqF9XjnuFVh=w870-h270-no?authuser=0)
 Click on 'Session Overview' and then double click on your completed session and go to 'Log Created' tab and there you can see how many records are processed.
 ![log](https://lh3.googleusercontent.com/pw/ACtC-3fJ0ZmPCIaIeZI4dwmsIDPrGu-m1_2ipONvFs1MDcnVZrEz_BXSNaohbTjn6m6wrXHLPAyPDfxdod2iKjoIb-ivJhWN49KSw8GulaQnox3aqcgoJSyhCA0k8FBmUteyAyt5VBC6rQi2kjiuEodT3VOU=w1034-h468-no?authuser=0)
-
 To summarize BDC session method, first you have to prepare a file and upload it then using FM BDC_OPEN_GROUP open new session, then using FM BDC_INSERT insert the data and then close the session using FM BDC_CLOSE_GROUP. Finally process your session that means updating the database by executing your session in SM35.
