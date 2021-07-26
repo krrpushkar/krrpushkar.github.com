@@ -2,7 +2,7 @@
 layout: post
 title:  "BDC : Session Method"
 author: sal
-categories: [ Jekyll, tutorial ]
+categories: [ Cross Application ]
 image: assets/images/bdc.jpg
 tags: [featured]
 date: 2020-06-10
