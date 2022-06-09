@@ -172,7 +172,7 @@ There are three types of Customer Exit.</p><a href="/function-module-exit">1. Fu
             </ul>
           </li> 
           <p><u>The main diffrence between Enhancement point and Enhancement Section</u> is that if you have written your code using Enhancement point, your custom code will get executed along with the standard code.
-          <br>But in case of ENhancement Section, your custom code will replace the standard code that means your custom code will get executed instead of standard code.</p>         
+          <br>But in case of Enhancement Section, your custom code will replace the standard code that means your custom code will get executed instead of standard code.</p>         
         </ul>
      </li>
     </ul> 
